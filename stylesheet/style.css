@@ -1,0 +1,849 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    text-decoration: none;
+}
+
+/* Background image */
+
+body {
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/backgroundImg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* ------------------------ */
+/* Start index */
+
+/* ------------------ */
+/* Media queries body */
+/* ------------------- */
+
+/* @media screen and (min-width: 768px) {
+
+    .index__header {
+        grid-area: header;
+    }
+
+    .index__aside {
+        grid-area: aside;
+    }
+
+    .index__main {
+        grid-area: main;
+    }
+
+    .index__footer {
+        grid-area: footer;
+    }
+
+    #layout__main {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 10% 80% 10%;
+        grid-template-areas: 
+            "header header"
+            "aside main"
+            "footer footer";
+    }
+} */
+/* ------------------------ */
+/* Start header */
+/* ---------------------- */
+
+header {
+    background: radial-gradient(circle at 100%, lightblue, transparent);
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+}
+
+header .header__logo {
+    height: 5rem;
+    width: 5rem;
+    margin: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+header .header__logo:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95);
+}
+
+header .header__logo img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+header .header__burguerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px gray;
+    border-radius: 5px;
+    transition: box-shadow 0.5s ease-in;
+  }
+
+input#menu {
+    display: none;
+  }
+
+header button.header__burguerMenu:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input#menu:checked ~ .header__navMenu {
+    display: block;
+} 
+  
+header .header__navMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: white;
+}
+  
+header .header__navMenu .header__closeNavMenu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+  }
+
+header .header__navMenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+header .header__navMenu ul li {
+    font-weight: 400;
+    padding: 0.5rem;
+  }
+  
+  header .header__navMenu ul li:hover {
+    background-color: rgb(250, 250, 250);
+  }
+
+/* -------------------- */
+  /* Media queries header*/
+  /* ---------------------- */
+
+@media screen and (min-width: 768px) {
+
+    header {
+        background: radial-gradient(circle at 100%, lightblue, transparent);
+        background-color: white;
+    }
+    
+    header .header__burguerMenu {
+      display: none;
+    }
+  
+    header .header__navMenu .header__closeNavMenu {
+      display: none;
+    }
+  
+    header .header__navMenu {
+      display: initial;
+      position: inherit;
+    }
+  
+    header .header__navMenu ul {
+        background: radial-gradient(circle at 100%, lightblue, transparent);
+        flex-direction: row;
+        justify-content: space-evenly;
+    } 
+
+    header .header__navMenu ul li:hover {
+        background-color: transparent;
+        transform: scale(0.95);
+    }
+}
+
+/* --------------------- */
+/* aside */
+/* --------------------- */
+
+aside {
+    border-top: 3px solid grey;
+    border-bottom: 3px solid gray;
+    background-color: white;
+
+}
+
+aside ul{
+    padding: 1rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+aside ul li:hover {
+    transform: scale(0.95);
+}
+
+ /* ----------------- */ 
+/* Main */
+/* ----------------- */
+
+.main__container-1 {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    color: white;
+    font-size: 1rem;
+}
+
+main section.main__gridArea {  
+    width: 80%;
+    margin: 2rem auto;
+}
+
+/* sección de imagenes uno */
+/* ------------------ */
+.img__1 {
+    grid-area: img1;
+}
+
+.img__2 {
+    grid-area: img2;
+}
+
+.img__3 {
+    grid-area:img3;
+}
+
+.main__grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "img1 img1" 
+    "img2 img3"
+}
+
+section div.main__grid1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* sección de imagenes dos */
+/* ------------------ */
+
+.img__4 {
+    grid-area: img4;
+}
+
+.img__5 {
+    grid-area: img5;
+}
+
+.img__6 {
+    grid-area:img6;
+}
+
+.main__grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "img4 img5" 
+    "img4 img6"
+}
+
+section div.main__grid2 img{
+    width: 100%;
+    height: 100%;
+    border: solid black;
+    object-fit: cover;
+}
+
+/* sección de imagenes tres */
+/* ------------------ */
+
+.img__7 {
+    grid-area: img7;
+}
+
+.img__8 {
+    grid-area: img8;
+}
+
+.img__9 {
+    grid-area:img9;
+}
+
+.main__grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "img7 img8" 
+    "img9 img9"
+}
+
+section div.main__grid3 img{
+    width: 100%;
+    height: 100%;
+    border: solid black;
+    object-fit: cover;
+}
+
+.main__container-2 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem; /* Revisar que acá pierde el sentido en mobile */
+}
+
+.main__container-3 {
+    padding: 2rem;
+    color: white;
+    font-size: 1.1rem; 
+}
+
+/* ----------------- */
+/* Media queries main */
+/* ----------------------- */
+
+@media screen and (min-width: 768px) {
+    
+    .main__container-1 {
+        font-size: 2rem;
+    }
+
+    .main__grid1 {
+        grid-area: main__grid1;
+    }
+
+    .main__grid2 {
+        grid-area: main__grid2;
+    }
+
+    .main__grid3 {
+        grid-area: main__grid3;
+    }
+
+    .main__gridArea {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "main__grid1 main__grid2 main__grid3";
+    }
+
+    .main__container-2 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+   .main__container-3 {
+        padding: 2rem 9rem;
+        font-size: 1.5rem; 
+    }
+    
+    .main__gridArea img {
+        transition: 0.5s ease-in;
+    }
+
+    .main__gridArea img:hover{
+        transform:scale(1.2)
+    }    
+}
+
+/* ------------------- */
+/* End Main */
+/* ------------------- */
+/* Start footer */
+
+footer {
+    height: 5rem;
+    background: radial-gradient(circle at 100%, lightblue, transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer .footer__socialMedia-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  footer .footer__socialMedia-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    background-color: rgb(124, 124, 124);
+    border-radius: 50%;
+    transition: color, background-color, transform 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  
+  footer .footer__socialMedia-container a:hover {
+    color: rgb(124, 124, 124);
+    background-color: white;
+    transform: scale(1.1) translateY(-5px);
+  }
+
+/* ---------------------- */
+  /* Fin footer */
+/* --------------------> */
+/* End index */
+/* -------------------- */
+/* Start store */
+/* ------------------- */
+
+.store__body {
+    display: grid;
+    grid-template-rows: 90px 60px 2550px 50px 
+    /* Acá es donde te comento que tengo el primer problema. ya que si yo fuera
+    a escribir el codigo coo grid-template-rows: 15% 15% 60% 10% todo se pone fuera de lugar
+    es que realmente no entiendo si los porcentajes me dan un total de 100% porque la parte del main
+    empieza a invadir el footer y como que la informacion del main no se ajusta a su caja
+    que debe tener el 60% de la pagina */
+}
+
+/* inicia Main */
+/* ----------------- */
+
+.store__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cajaContenido {
+    grid-area: cajaContenido;
+    align-self: center;
+    justify-self: center;
+    color: white;
+}
+
+.cajaPrecio {
+    grid-area: cajaPrecio;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-size: 0.6rem;
+}
+
+.caja1 {
+    grid-area: caja1;
+}
+.caja2 {
+    grid-area: caja2;
+
+}
+.caja3 {
+    grid-area: caja3;
+}
+
+.caja4 {
+    grid-area: caja4;
+}
+
+.caja5 {
+    grid-area: caja5;
+}
+
+.store__tiposTela {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:7% 8% 25% 29% 29%;
+    grid-template-areas: 
+        "cajaContenido cajaContenido" 
+        "cajaPrecio cajaPrecio"   
+        "caja1 caja2" 
+        "caja3 caja3"
+        "caja4 caja5";
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------- */
+/* Start store footer */
+
+.store__footer {
+    margin-top: 30px;
+}
+/* ------------------- */
+/* Media queries Store */
+/* ---------------------- */
+
+@media screen and (min-width: 768px){
+    .store__header {
+        grid-area: header;
+    }
+
+    .store__aside {
+        grid-area: aside;
+        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .store__aside ul{
+        flex-direction: column;
+        height: 20%;
+    }
+
+    .cajaPrecio {
+        font-size: 0.9rem;
+    }
+
+    .store__main {
+        margin: 5rem;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "store__tiposTela1 store__tiposTela2"
+            "store__tiposTela3 store__tiposTela4";
+    }
+    .store__footer {
+        grid-area: footer;
+    }
+
+    .store__body {
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 6% 90% 4%;
+        grid-template-areas: 
+            "header header"
+            "aside main"
+            "footer footer";
+    }
+
+    #store__tiposTela1 {
+        grid-area: store__tiposTela1;
+    }
+    #store__tiposTela2 {
+        grid-area: store__tiposTela2;
+    }
+    #store__tiposTela3 {
+        grid-area: store__tiposTela3;
+    }
+    #store__tiposTela4 {
+        grid-area: store__tiposTela4;
+    }
+    .store__main img {
+    transition: 0.5s ease-in;
+    }
+
+    .store__main img:hover{
+    transform:scale(1.2)
+    }
+}   
+
+/* --------------------- */
+/* End store------------- */
+/* -----------------> */
+/* Start login */
+/* --------------> */
+
+.login__main {
+    height: 24rem;
+}
+
+.login__aside ul{
+    flex-direction: column;
+    height: 20%;
+}
+
+.login__container-1{
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.login__mainphrase {
+    font-size: 1.1rem;
+}
+
+.login__container-2 {
+    margin: 4rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.login__input {
+    display: flex;
+    justify-content: center;
+}
+
+.login__container-3 {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.login__footer {
+padding: auto;
+}
+
+/* ------------------- */
+/* Media queries login */
+/* ---------------------- */
+
+@media screen and (min-width: 768px){
+
+    .login__aside ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .login__main {
+        height: 25rem;
+    }
+
+    .login__container-1 {
+        margin: 4rem;
+    }
+}
+
+/* ------------------------> */
+/* End login */
+/* ------------------> */
+/* Start sales */
+/* ------------------------- */
+
+.sales__aside ul{
+    flex-direction: column;
+    height: 20%;
+}
+
+.sales__main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.7rem;
+}
+
+.sales__itemsContainers {
+    background-color: white;
+    width: 100%;
+    border: 2px black solid;
+}
+
+.sales__container-1 {
+    font-size: 20px;
+    color: white;
+   }
+
+.store__img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------- */
+/* Media queries contact */
+/* ---------------------- */
+
+@media screen and (min-width: 768px){
+
+    .sales__main {
+        margin-left: 5rem;
+    }
+}
+
+/* ------------------------> */
+/* End sales */
+/* ------------------> */
+/* Start contact */
+/* ------------------------ */
+
+.contact__aside ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact__general{
+    min-height: 70vh;
+    display: grid;
+    justify-content: center;
+}
+
+.contact__general .contact__formulary{
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__general .contact__formulary h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.contact__general .contact__formulary article {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contact__general .contact__formulary p {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.contact__general .contact__infoFormulary {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__general .contact__formulary input {
+    height: 2.5rem;
+    text-align: center;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.contact__general .contact__infoFormulary h4 {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 1rem;
+}
+
+.contact__general .contact__infoFormulary .contact__numeroMetros {
+    margin: 1.2rem;
+}
+
+.contact__general .contact__infoFormulary textarea {
+    margin: 1.2rem;
+}
+
+.contact__general .contact__infoFormulary .contact__button {
+    margin-left: 1rem;
+    margin-right:1rem;
+}
+
+/* ------------------- */
+/* Media queries contact */
+/* ---------------------- */
+
+@media screen and (min-width: 768px){
+
+    .contact__aside ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .contact__general .contact__formulary h2 {
+        font-size: 2.5rem;
+    }
+    
+    .contact__general .contact__formulary p {
+        font-size: 1.2rem;
+        text-align: start;
+    }
+
+    .contact__general .contact__formulary h4 {
+        font-size: 1.2rem;
+        text-align: start;
+    }
+
+    .contact__general .contact__infoFormulary {
+        display:inline-block;
+    }
+
+}
+
+/* -----------------> */
+/* End contact */
+/* ------------------> */
+/* Start location */
+
+.location__aside ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.location__container-1 {
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem;
+}
+
+.location__container-2  {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.location__container-3 { 
+    font-size: 0.9rem;
+    color: white;
+    padding: 1rem;
+}
+
+.location__container-2 iframe {
+    width: 90%;
+}
+
+/* ------------------- */
+/* Media queries location */
+/* ---------------------- */
+
+@media screen and (min-width: 768px){
+
+    .location__aside ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .location__container-1 {
+        font-size: 1.5rem;
+        padding: 5rem;
+    }
+
+    .location__container-3 {
+        font-size: 1.2rem;
+        padding: 2rem;
+    }
+}

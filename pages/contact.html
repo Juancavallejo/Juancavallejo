@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafza - Formulario de contacto</title>
+ <!-- Font awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"/>
+<!--Animate.css  -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!-- Stylesheet -->
+<link rel="stylesheet" href="../stylesheet/style.css">
+</head>
+<body class="sales__body">
+<header class="sales__header">
+  <div class="header__logo">
+      <a href="../index.html">
+          <img src="../assets/images/logoRafza.png" alt="logo" width="70px">
+      </a>
+  </div>
+  <label for="menu" class="header__burguerMenu">
+      <i class="fa-solid fa-bars"></i>
+  </label>
+  <input type="checkbox" id="menu">
+  <nav class="header__navMenu">
+      <label for="menu" class="header__closeNavMenu">
+          <i class="fa-solid fa-circle-xmark"></i>
+      </label>
+      <ul type="none">
+          <li class="header__main"><a href="../pages/store.html">Tienda</a></li>
+          <li class="header__main"><a href="../pages/sales.html">Descuentos de temporada</a></li>
+          <li class="header__main"><a href="../pages/login.html">Log in</a></li>
+          <li class="header__main"><a href="../pages/contact.html">Escribenos</a></li>
+      </ul>
+  </nav>
+</header>
+<!-- ------------- -->
+<!-- Aside -->
+<aside class="contact__aside">
+    <ul type="none">
+        <li class="header__main"><a href="../pages/openingHours.html">Horarios de atención</a></li>
+        <li class="header__main"><a href="../pages/location.html">¿Donde nos encontramos?</a></li>
+        <li class="header__main"><a href="../pages/about.html">¿Quienes somos?</a></li>
+    </ul>
+</aside>
+<!-- ----------------- -->
+<!-- main---------- -->
+    <main class="contact__general">
+        <form action="/ruta-destino" method="get" enctype="" class="contact__formulary">
+            <h2>Escribenos!</h2>
+            <article>
+                <p>Deja tus datos, detallando tu producto, cantidad necesitada y
+                 grozor requerido y te enviaremos una cotización tan pronto como nos sea posible.</p>
+            </article>
+            <div class="contact__infoFormulary">
+                <input type="text" name="username" id="nombre" placeholder="Ingresa tu nombre" required>
+                <input type="text" name="lastname" placeholder="Ingresa tu apellido">
+                <input type="number" name="Age" placeholder="Ingresa tu Edad" required>
+                <input type="email" name="email" placeholder="Ingresa tu email" required>
+                <select name="Ciudades" id="Ciudades">
+                <option value="" hidden selected>Elije una ciudad</option>
+                <option value="Med">Medellín</option>
+                <option value="Bog">Bogotá</option>
+                <option value="Cal">Cali</option>
+                <option value="Car">Cartagena</option>
+                <option value="Per">Pereira</option>
+                <option value="Man">Manizales</option>
+                </select>
+            </div>
+            <div class="contact__infoFormulary">
+                 <h4>Recuerda que solo hacemos entregas dentro de Colombia.</h4>
+                <p>Adicionalmente, por favor indicanos la cantidad de material que necesitarias</p>
+                <input type="number" name="Cantidad" id="Cantidad" value="Cantidad" placeholder="Ingresa numero de metros"class="contact__numeroMetros">
+            </div>
+            <div class="contact__infoFormulary">
+                <P>Si tienes algun tipo diseño de tela en especifico, que quieras que reproduzcamos, puedes adjuntarlo: <input type="file" name="avatar" multiple accept=".jpg, .png"></datalist></P>
+                <textarea name="message" placeholder= "Agrega caracteristicas o requerimientos especificos" cols="80" rows="10"></textarea>
+                <button class="contact__button" type="reset">Limpiar</button>
+                <button class="contact__button"type="submit"> Enviar </button>
+            </div>
+        </form>
+    </main>
+<!-- End main -->
+<Footer>
+<!-- Start footer -->
+<div class="footer__socialMedia-container">
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-facebook"></i></a>
+    <a href="" class="logoWp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+</Footer>
+</body>
+</html>

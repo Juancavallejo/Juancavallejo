@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafza Log in</title>
+    <!-- Font awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"/>
+    <!--Animate.css  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../stylesheet/style.css">
+</head>
+<body>
+    <!-- ------------------------ -->
+    <!-- Start header -->
+    <!-- ----------------------- -->
+    <header class="index__header">
+        <div class="header__logo">
+            <a href="../index.html">
+                <img src="../assets/images/logoRafza.png" alt="logo" width="70px">
+            </a>
+        </div>
+        <label for="menu" class="header__burguerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="header__navMenu">
+            <label for="menu" class="header__closeNavMenu">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </label>
+            <ul type="none">
+                <li class="header__main"><a href="../pages/store.html">Tienda</a></li>
+                <li class="header__main"><a href="../pages/sales.html">Descuentos de temporada</a></li>
+                <li class="header__main"><a href="../pages/login.html">Log in</a></li>
+                <li class="header__main"><a href="../pages/contact.html">Escribenos</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <!-- ---------------------- -->
+    <!-- Publicidad - corporativo -->
+    <aside class="login__aside">
+        <ul type="none">
+            <li class="header__main"><a href="pages/openingHours.html">Horarios de atención</a></li>
+            <li class="header__main"><a href="../pages/location.html">¿Donde nos encontramos?</a></li>
+            <li class="header__main"><a href="pages/about.html">¿Quienes somos?</a></li>
+        </ul>
+    </aside>
+    <!-- ------------------- -->
+    <!-- start main -->
+    <main class="login__main">
+        <div class="login__container-1">
+            <form action="/ruta-destino" method="get" enctype="">
+            <H2 class="login__mainphrase">Ingresa tu usuario y tu contraseña para acceder al estado actual de tu pedido</H2>
+        </div>
+        <div class="login__container-2">
+            <fieldset>
+                <input class="login__input" type="email" name="email" placeholder="Ingresa tu email" required class="input">
+                <input type="password" placeholder="Contraseña" required class="input">
+        <div class="login__container-3">
+            <button type="reset" class="login__input">Limpiar</button>
+            <button type="submit" class="login__input"> Enviar </button>
+        </div>    
+        </fieldset>
+        </div>    
+        </form>
+    </main>
+    <!-- ------------------ -->
+    <!-- Start footer -->
+    <footer class="login__footer">
+        <div class="footer__socialMedia-container">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="logoWp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
