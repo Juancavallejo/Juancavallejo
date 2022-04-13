@@ -425,11 +425,6 @@ footer {
 .store__body {
     display: grid;
     grid-template-rows: 90px 60px 2550px 50px 
-    /* Acá es donde te comento que tengo el primer problema. ya que si yo fuera
-    a escribir el codigo coo grid-template-rows: 15% 15% 60% 10% todo se pone fuera de lugar
-    es que realmente no entiendo si los porcentajes me dan un total de 100% porque la parte del main
-    empieza a invadir el footer y como que la informacion del main no se ajusta a su caja
-    que debe tener el 60% de la pagina */
 }
 
 /* inicia Main */
@@ -616,7 +611,7 @@ img {
 }
 
 .login__footer {
-padding: auto;
+    padding: auto;
 }
 
 /* ------------------- */
@@ -637,6 +632,18 @@ padding: auto;
 
     .login__container-1 {
         margin: 4rem;
+    }
+
+    .login__container-3 {
+        transition: all 0.5s ease-in;
+    }
+
+    .login__container-3 .login__inputReset:hover {
+        transform: scale(1.3) translateX(-10px);
+    }
+
+    .login__container-3 .login__inputSubmit:hover {
+        transform: scale(1.3) translateX(10px);
     }
 }
 
@@ -674,8 +681,12 @@ padding: auto;
     height: 100%;
 }
 
+.sales__footer .footer__socialMedia-container a {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 /* ------------------- */
-/* Media queries contact */
+/* Media queries sales */
 /* ---------------------- */
 
 @media screen and (min-width: 768px){
@@ -683,6 +694,40 @@ padding: auto;
     .sales__main {
         margin-left: 5rem;
     }
+
+    .sales__aside ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .sales__itemsContainers img { 
+        transition: 0.5s ease-in;
+    }
+        
+    .sales__itemsContainers img:hover{
+        transform:scale(0.9)
+    }
+
+    .sales__itemsContainers h3 {
+        text-align: center;
+    }
+
+    .sales__itemsContainers .price {
+        text-align: center;
+    }
+
+    .sales__itemsContainers h5 {
+        font-size: 1.5rem;
+        text-align: center;
+        transition: all 0.5s ease-in;
+    }
+
+    .sales__itemsContainers h5:hover {
+        transform: scale(1.1) translateY(-5px);
+    }
+
+    
 }
 
 /* ------------------------> */
@@ -791,7 +836,19 @@ padding: auto;
         display:inline-block;
     }
 
+    .contact__infoFormulary {
+        transition: all 0.5s ease-in;
+    }
+
+    .contact__infoFormulary .contact__inputReset:hover {
+        transform: scale(1.3) translateX(-10px);
+    }
+
+    .contact__infoFormulary .contact__inputSubmit:hover {
+        transform: scale(1.3) translateX(10px);
+    }
 }
+
 
 /* -----------------> */
 /* End contact */
