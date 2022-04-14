@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
     text-decoration: none;
 }
 
@@ -383,14 +382,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   }
   
   footer .footer__socialMedia-container {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
   }
   
@@ -404,7 +402,6 @@ footer {
     color: white;
     background-color: rgb(124, 124, 124);
     border-radius: 50%;
-    transition: color, background-color, transform 0.5s ease-in;
     transition: all 0.5s ease-in;
   }
   
@@ -424,7 +421,7 @@ footer {
 
 .store__body {
     display: grid;
-    grid-template-rows: 90px 60px 2550px 50px 
+    grid-template-rows: 5.2rem 4rem 160rem 3rem 
 }
 
 /* inicia Main */
@@ -489,12 +486,7 @@ img {
     height: 100%;
 }
 
-/* --------------------- */
-/* Start store footer */
 
-.store__footer {
-    margin-top: 30px;
-}
 /* ------------------- */
 /* Media queries Store */
 /* ---------------------- */
@@ -532,6 +524,7 @@ img {
     }
     .store__footer {
         grid-area: footer;
+        height: auto;
     }
 
     .store__body {
@@ -672,8 +665,9 @@ img {
 }
 
 .sales__container-1 {
-    font-size: 20px;
+    font-size: 1.4rem;
     color: white;
+    margin: 1rem;
    }
 
 .store__img {
@@ -692,7 +686,7 @@ img {
 @media screen and (min-width: 768px){
 
     .sales__main {
-        margin-left: 5rem;
+        margin-left: 6rem;
     }
 
     .sales__aside ul{
@@ -700,6 +694,10 @@ img {
         flex-direction: row;
         justify-content: space-evenly;
     }
+
+    .sales__container-1 {
+        font-size: 1.7rem;
+       }
 
     .sales__itemsContainers img { 
         transition: 0.5s ease-in;
@@ -727,7 +725,6 @@ img {
         transform: scale(1.1) translateY(-5px);
     }
 
-    
 }
 
 /* ------------------------> */
