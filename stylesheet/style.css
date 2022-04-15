@@ -378,7 +378,6 @@ section div.main__grid3 img{
 
 footer {
     height: 5rem;
-    background: radial-gradient(circle at 100%, lightblue, transparent);
     display: flex;
     justify-content: center;
     align-items: center;

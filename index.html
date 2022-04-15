@@ -18,86 +18,101 @@
     />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./stylesheet/style.css">
+    <!-- Booststrap CDN stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body id="layout__main">
     <!-- ------------------------ -->
     <!-- Start header -->
     <!-- ----------------------- -->
-    <header class="index__header">
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="./assets/images/logoRafza.png" alt="logo" width="70px">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/logoRafza.png" alt="" width="30" height="24" class="d-block imagen-fluid"> Rafza
             </a>
-        </div>
-        <label for="menu" class="header__burguerMenu">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <input type="checkbox" id="menu">
-        <nav class="header__navMenu">
-            <label for="menu" class="header__closeNavMenu">
-                <i class="fa-solid fa-circle-xmark"></i>
-            </label>
-            <ul type="none">
-                <li class="header__main"><a href="pages/store.html">Tienda</a></li>
-                <li class="header__main"><a href="pages/sales.html">Descuentos de temporada</a></li>
-                <li class="header__main"><a href="pages/login.html">Log in</a></li>
-                <li class="header__main"><a href="pages/contact.html">Escribenos</a></li>
-                
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/store.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/sales.html">Descuentos de temporada</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/login.html">Log in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contact.html">Escribenos</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Más de nosotros
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="pages/openingHours.html">Horarios de atención</a></li>
+                  <li><a class="dropdown-item" href="pages/location.html">¿Donde nos encontramos?</a></li>
+                  <li><a class="dropdown-item" href="pages/about.html">¿Quienes somos?</a></li>
+                </ul>
+              </li>
             </ul>
-        </nav>
-    </header>
-    <!-- ---------------------- -->
-    <!-- Publicidad - corporativo -->
-    <aside class="index__aside">
-        <ul type="none">
-            <li class="header__main"><a href="pages/openingHours.html">Horarios de atención</a></li>
-            <li class="header__main"><a href="pages/location.html">¿Donde nos encontramos?</a></li>
-            <li class="header__main"><a href="pages/about.html">¿Quienes somos?</a></li>
-        </ul>
-    </aside>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     <!-- ------------------- -->
     <!-- start main -->
-    <main class="index__main">
-        <section class="main__container-1">
-            <h2 class="animate__animated animate__backInDown">Tus mejores materias con los más grandes descuentos a un solo click</h2>
+    <!-- ----------------------- -->
+    <main class="container-fluid">
+            <h2 class="animate__animated animate__backInDown text-light m-4">Tus mejores materias con los más grandes descuentos a un solo click.</h2>
+        <section class="container">
+            <div class="row mx-2 mb-3">
+                <img src="./assets/img/imagenIndex1.png" alt="imagenIndex1" class="col-6 col-md-3 p-0 ">
+                <img src="./assets/img/imagenIndex12.png" alt="imagenIndex12" class="col-6 col-md-3 p-0">
+                <img src="./assets/img/supplexEstampadas3.png" alt="imagenIndex3" class="col-6 col-md-3 p-0">
+                <img src="./assets/img/imagenIndex2.png" alt="imagenIndex2" class="col-6 col-md-3 p-0">
+            </div>
+            <div class="row mx-2 mb-3">
+                <img src="./assets/img/imagenIndex10.png" alt="imagenIndex10" class="col-6 col-md-3 p-0">
+                <img src="./assets/img/ImagenIndex5.png" alt="ImagenIndex5" class="col-6 col-md-3 p-0">
+                <img src="./assets/img/imagenIndex6.png" alt="ImagenIndex6" class="col-6 col-md-3 p-0">
+                <img src="./assets/img/imagenIndex9.png" alt="imagenIndex9" class="col-6 col-md-3 p-0">
+            </div>
+            <div class="row mx-2 mb-3">
+                <img src="./assets/img/imagenIndex4.png" alt="imagenIndex4" class="col-6 col-md-3 p-0">
+                <img src="./assets/img/imagenIndex11.png" alt="imagenIndex11" class="col-6 col-md-3 p-0">
+                <img src="./assets/img/imagenIndex8.png" alt="imagenIndex8" class="col-6 col-md-3 p-0">
+                <img src="./assets/img/imagenIndex7.png" alt="imagenIndex7" class="col-6 col-md-3 p-0">
+            </div>
         </section>
-        <section class="main__gridArea">
-            <div class="main__grid1">
-                <img src="./assets/images/imagenIndex1.png" alt="imagenIndex1" class="img__1">
-                <img src="./assets/images/imagenIndex12.png" alt="imagenIndex12" class="img__2">
-                <img src="./assets/images/imagenIndex3.png" alt="imagenIndex3" class="img__3">
-            </div>
-            <div class="main__grid2">
-                <img src="./assets/images/imagenIndex10.png" alt="imagenIndex10" class="img__4">
-                <img src="./assets/images/ImagenIndex5.png" alt="ImagenIndex5" class="img__5">
-                <img src="./assets/images/imagenIndex6.png" alt="ImagenIndex6" class="img__6">
-            </div>
-            <div class="main__grid3">
-                <img src="./assets/images/imagenIndex4.png" alt="imagenIndex4" class="img__7">
-                <img src="./assets/images/imagenIndex11.png" alt="imagenIndex11" class="img__8">
-                <img src="./assets/images/imagenIndex8.png" alt="imagenIndex8" class="img__9">
-            </div>
-        </section>
-        <div class="main__container-2">
-                <ul type="none">
-                    <li>Calidad Garantizada</li>
-                    <li>Precios justos</li>
-                    <li>Entrega Puntual</li>
+        <div class="container">
+                <ul type="none" >
+                    <li class="text-light fs-5">Calidad Garantizada</li>
+                    <li class="text-light fs-5">Precios justos</li>
+                    <li class="text-light fs-5">Entrega Puntual</li>
                 </ul>
         </div>
-        <div class="main__container-3">
-                <h4>Estás en buenas manos</h4> 
-                <P>Amplia experiencia en el sector textil, atendiendo altas demandas de productos y con calidades garantizadas.</P>
+        <div class="container">
+                <h2 class= "text-light fw-bold">Estás en buenas manos</h2> 
+                <P class= "text-light fs-5">Amplia experiencia en el sector textil, atendiendo altas demandas de productos y con calidades garantizadas.</P>
         </div>
     </main>
     <!-- ------------------ -->
     <!-- Start footer -->
-    <footer class="store__footer">
+    <footer class="store__footer m-2">
         <div class="footer__socialMedia-container">
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a href="" class="logoWp"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </footer>
+    <!-- End footer -->
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
