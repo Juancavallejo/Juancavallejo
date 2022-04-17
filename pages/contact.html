@@ -23,15 +23,15 @@
     <!-- ------------------------ -->
        <!-- Start header -->
        <!-- ----------------------- -->
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-           <div class="container-fluid">
-               <a class="navbar-brand" href="../index.html">
-                   <img src="../assets/img/logoRafza.png" alt="" width="30" height="24" class="d-block imagen-fluid"> Rafza
-               </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logoRafza.png" alt="" width="30" height="24" class="d-block imagen-fluid"> Rafza
+            </a>
              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
              </button>
-             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                    <li class="nav-item">
                        <a class="nav-link" href="../pages/store.html">Tienda</a></li>
@@ -41,59 +41,61 @@
                        <a class="nav-link" href="../pages/login.html">Log in</a></li>
                    <li class="nav-item">
                        <a class="nav-link" href="../pages/contact.html">Escribenos</a></li>
-                 <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     Más de nosotros
-                   </a>
-                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <li><a class="dropdown-item" href="../pages/openingHours.html">Horarios de atención</a></li>
-                     <li><a class="dropdown-item" href="../pages/location.html">¿Donde nos encontramos?</a></li>
-                     <li><a class="dropdown-item" href="../pages/about.html">¿Quienes somos?</a></li>
-                   </ul>
-                 </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Más de nosotros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/openingHours.html">Horarios de atención</a></li>
+                            <li><a class="dropdown-item" href="../pages/location.html">¿Donde nos encontramos?</a></li>
+                            <li><a class="dropdown-item" href="../pages/about.html">¿Quienes somos?</a></li>
+                        </ul>
+                    </li>
                </ul>
                <form class="d-flex">
                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                  <button class="btn btn-outline-success" type="submit">Search</button>
                </form>
-             </div>
-           </div>
-         </nav>
+            </div>
+        </div>
+    </nav>
        <!-- ------------------- -->
        <!-- start main -->
        <!-- ----------------------- -->
-       <main class="contact__general">
-        <form action="/ruta-destino" method="get" enctype="" class="contact__formulary">
-            <h2 class="text center text light animate__animated animate__backInDown">Escribenos!</h2>
-            <article class="text center text light">
-                <p>Deja tus datos, detallando tu producto, cantidad necesitada y
-                 grozor requerido y te enviaremos una cotización tan pronto como nos sea posible.</p>
-            </article>
-            <div class="contact__infoFormulary">
-                <input type="text" name="username" id="nombre" placeholder="Ingresa tu nombre" required>
-                <input type="text" name="lastname" placeholder="Ingresa tu apellido">
-                <input type="number" name="Age" placeholder="Ingresa tu Edad" required>
-                <input type="email" name="email" placeholder="Ingresa tu email" required>
+    <main class="contact__mainContainer">
+        <form class="contact__form" action="/ruta-destino" method="get" enctype="">
+            <h2 class="text-center text-light animate__animated animate__backInDown m-4">Escribenos!</h2>
+            <p class="container text-center text-light">Deja tus datos, detallando tu producto, cantidad necesitada y
+                te enviaremos una cotización tan pronto como nos sea posible.</p>
+            <div class="contact__input">
+                <input class="text-center" type="text" name="username and lastname" id="nombre" placeholder="Ingresa tu nombre" required>
+                <input class="text-center" type="email" name="email" placeholder="Ingresa tu email" required>
+                <input class="text-center" type="number" name="Cantidad" id="Cantidad" value="Cantidad" placeholder="Numero de metros"class="contact__numeroMetros">
                 <select name="Ciudades" id="Ciudades">
-                <option value="" hidden selected>Elije una ciudad</option>
-                <option value="Med">Medellín</option>
-                <option value="Bog">Bogotá</option>
-                <option value="Cal">Cali</option>
-                <option value="Car">Cartagena</option>
-                <option value="Per">Pereira</option>
-                <option value="Man">Manizales</option>
+                    <option value="" hidden selected>Elije una ciudad</option>
+                    <option value="Med">Medellín</option>
+                    <option value="Bog">Bogotá</option>
+                    <option value="Cal">Cali</option>
+                    <option value="Car">Cartagena</option>
+                    <option value="Per">Pereira</option>
+                    <option value="Man">Manizales</option>
                 </select>
             </div>
-            <div class="contact__infoFormulary">
-                 <h4>Recuerda que solo hacemos entregas dentro de Colombia.</h4>
-                <p>Adicionalmente, por favor indicanos la cantidad de material que necesitarias</p>
-                <input type="number" name="Cantidad" id="Cantidad" value="Cantidad" placeholder="Ingresa numero de metros"class="contact__numeroMetros">
-            </div>
-            <div class="contact__infoFormulary">
-                <P>Si tienes algun tipo diseño de tela en especifico, que quieras que reproduzcamos, puedes adjuntarlo: <input type="file" name="avatar" multiple accept=".jpg, .png"></datalist></P>
-                <textarea name="message" placeholder= "Agrega caracteristicas o requerimientos especificos" cols="80" rows="10"></textarea>
-                <button class="contact__inputReset" type="reset">Limpiar</button>
-                <button class="contact__inputSubmit"type="submit"> Enviar </button>
+            <div>
+                <h4 class="container text-light">Recuerda que solo hacemos entregas dentro de Colombia.</h4>
+               <!--  <P class="container text-start text-light">Si tienes algun tipo diseño de tela en especifico, que quieras que reproduzcamos, puedes adjuntarlo: 
+                <div>
+                    <label for="formFileSm" class="form-label"></label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file"multiple accept=".jpg, .png">
+                </div> -->
+                <div class="mb-3 text-light text-center">
+                    <label for="exampleFormControlTextarea1" class="form-label w-75">Ingresa cualquiera otra necesidad especial</label>
+                    <textarea class="form-control w-75 mx-auto" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="contact__buttons d-flex justify-content-center m-2">
+                    <button class="btn btn-dark mx-2 mx-md-3" type="reset">Limpiar</button>
+                    <button class="btn btn-dark mx-2 mx-md-3" type="submit">Enviar</button>
+                </div>
             </div>
         </form>
     </main>
