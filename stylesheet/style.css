@@ -562,14 +562,14 @@ img {
 /* Start login */
 /* --------------> */
 
- .contact__mainContainer {
+ .login__mainContainer {
      min-height: 70vh;
      display: grid;
      justify-content: center;
      align-items: center;
  }
 
- .contact__mainContainer .contact__form {
+ .login__mainContainer .login__form {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -580,20 +580,20 @@ img {
 
 @media screen and (min-width: 768px){
 
-    .contact__mainContainer .contact__form .contact__buttons [type=reset] {
+    .login__mainContainer .login__form .login__buttons [type=reset] {
         transition: all 0.5s ease-in;
     }
 
-    .contact__mainContainer .contact__form .contact__buttons [type=reset]:hover {
+    .login__mainContainer .login__form .login__buttons [type=reset]:hover {
         transform: scale(1.3) translateX(-10px);
         cursor:pointer
     }
 
-    .contact__mainContainer .contact__form .contact__buttons [type=submit] {
+    .login__mainContainer .login__form .login__buttons [type=submit] {
         transition: all 0.5s ease-in;
     }
 
-    .contact__mainContainer .contact__form .contact__buttons [type=submit]:hover {
+    .login__mainContainer .login__form .login__buttons [type=submit]:hover {
         transform: scale(1.3) translateX(10px);
         cursor:pointer
     }
