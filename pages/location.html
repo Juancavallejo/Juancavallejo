@@ -6,71 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafza - Ubicación</title>
     <link rel="shortcut icon" href="../assets/images/logoRafza.png">
-<!-- Font awesome -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-rel="stylesheet"/>
-<!--Animate.css  -->
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<!-- Stylesheet -->
-<link rel="stylesheet" href="../stylesheet/style.css">
+    <!-- Booststrap CDN stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"/>
+    <!--Animate.css  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../stylesheet/style.css">
 </head>
-<body class="location__body">
-    <header class="location__header">
-    <div class="header__logo">
-        <a href="../index.html">
-          <img src="../assets/images/logoRafza.png" alt="logo" width="70px">
-        </a>
-    </div>
-    <label for="menu" class="header__burguerMenu">
-        <i class="fa-solid fa-bars"></i>
-    </label>
-    <input type="checkbox" id="menu">
-    <nav class="header__navMenu">
-        <label for="menu" class="header__closeNavMenu">
-             <i class="fa-solid fa-circle-xmark"></i>
-        </label>
-        <ul type="none">
-            <li class="header__main"><a href="../pages/store.html">Tienda</a></li>
-            <li class="header__main"><a href="../pages/sales.html">Descuentos de temporada</a></li>
-            <li class="header__main"><a href="../pages/login.html">Log in</a></li>
-            <li class="header__main"><a href="../pages/contact.html">Escribenos</a></li>
-        </ul>
-    </nav>
-    </header>
-    <!-- ------------- -->
-    <!-- Aside -->
-    <aside class="location__aside">
-        <ul type="none">
-            <li class="header__main"><a href="../pages/openingHours.html">Horarios de atención</a></li>
-            <li class="header__main"><a href="../pages/location.html">¿Donde nos encontramos?</a></li>
-            <li class="header__main"><a href="../pages/about.html">¿Quienes somos?</a></li>
-        </ul>
-    </aside>
-    <!-- ----------------- -->
-    <!-- main---------- -->
-    <main class="location__main">
-        <div class="location__container-1">
-            <h3 class="animate__animated animate__backInDown">¿Donde nos encontramos?</h3>
-            <p class="animate__animated animate__backInDown">Si gustas venirnos a visitar, y poder observar nuestros productos, puedes venir a la siguiente ubicación:</p>
+<body>
+    <!-- ------------------------ -->
+       <!-- Start header -->
+       <!-- ----------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logoRafza.png" alt="" width="30" height="24" class="d-block imagen-fluid"> Rafza
+            </a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                   <li class="nav-item">
+                       <a class="nav-link" href="../pages/store.html">Tienda</a></li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="../pages/sales.html">Descuentos de temporada</a></li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="../pages/login.html">Log in</a></li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="../pages/contact.html">Escribenos</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Más de nosotros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/openingHours.html">Horarios de atención</a></li>
+                            <li><a class="dropdown-item" href="../pages/location.html">¿Donde nos encontramos?</a></li>
+                            <li><a class="dropdown-item" href="../pages/about.html">¿Quienes somos?</a></li>
+                        </ul>
+                    </li>
+               </ul>
+               <form class="d-flex">
+                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                 <button class="btn btn-outline-success" type="submit">Search</button>
+               </form>
+            </div>
         </div>
-        <div class="location__container-2">
+    </nav>
+       <!-- ------------------- -->
+       <!-- start main -->
+       <!-- ----------------------- -->
+    <main class="container-fluid location__mainContainer w-80 ">
+        <h3 class="text-center text-light animate__animated animate__backInDown">¿Donde nos encontramos?</h3>
+        <p class="text-center text-light animate__animated animate__backInDown">Si gustas venirnos a visitar, y poder observar nuestros productos, puedes venir a la siguiente ubicación:</p>
+        <div class="location__mapContainer">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.1003975109843!2d-75.57240295410156!3d6.250500202178955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428ff97c21f0d%3A0xc17beebd11bf66b0!2sPasaje%20Comercial%20Galer%C3%ADas%20de%20Ayacucho!5e0!3m2!1sen!2sco!4v1647310040566!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="animate__animated animate__backInLeft"></iframe>
         </div>
-        <div class="location__container-3">
-        <p class="location__text">Para tu comodidad, contamos con envios a domicilio gratuitos para compras superiores a COP250.000 en la ciudad de Medellín y sus alrededores. Ahora, para envios a otras ciudades, mencionadas en el formulario de contacto te invitamos a realizar una cotización y el valor de tu envio dependerá de la cantidad de producto adquirida. </p>
-        <p class="location__text">¡Gracias!</p>
+        <div class="m-2">
+            <p class="mx-auto text-light">Para tu comodidad, contamos con envios a domicilio gratuitos para compras superiores a COP250.000 en la ciudad de Medellín y sus alrededores. Ahora, para envios a otras ciudades, mencionadas en el formulario de contacto te invitamos a realizar una cotización y el valor de tu envio dependerá de la cantidad de producto adquirida. </p>
+            <p class="text-start text-light">¡Gracias!</p>
         </div>
     </main>
+     <!-- ------------- -->
     <!-- Start footer -->
-    <footer class="location__footer">
+    <footer class="sales__footer m-2">
         <div class="footer__socialMedia-container">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-instagram" ></i></a>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a href="" class="logoWp"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </footer>
+    <!-- End footer -->
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
