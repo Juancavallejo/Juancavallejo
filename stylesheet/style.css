@@ -52,152 +52,19 @@ body {
 /* Start header */
 /* ---------------------- */
 
-header {
-    background: radial-gradient(circle at 100%, lightblue, transparent);
-    display: flex;
-    justify-content: space-around ;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 999;
-}
-
-header .header__logo {
-    height: 5rem;
-    width: 5rem;
-    margin: 1.5rem;
+.navbar-brand img{
     transition: all 0.2s ease-in;
 }
 
-header .header__logo:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.navbar-brand img:hover {
     transform: scale(0.95);
 }
 
-header .header__logo img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px gray;
+.nav-item a{
+    transition: all 0.2s ease-in;
 }
 
-header .header__burguerMenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 2rem;
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px gray;
-    border-radius: 5px;
-    transition: box-shadow 0.5s ease-in;
-  }
-
-input#menu {
-    display: none;
-  }
-
-header button.header__burguerMenu:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-input#menu:checked ~ .header__navMenu {
-    display: block;
-} 
-  
-header .header__navMenu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    height: 100%;
-    background-color: white;
-}
-  
-header .header__navMenu .header__closeNavMenu {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    font-size: 1.5rem;
-  }
-
-header .header__navMenu ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  
-header .header__navMenu ul li {
-    font-weight: 400;
-    padding: 0.5rem;
-  }
-  
-  header .header__navMenu ul li:hover {
-    background-color: rgb(250, 250, 250);
-  }
-
-/* -------------------- */
-  /* Media queries header*/
-  /* ---------------------- */
-
-@media screen and (min-width: 768px) {
-
-    header {
-        background: radial-gradient(circle at 100%, lightblue, transparent);
-        background-color: white;
-    }
-    
-    header .header__burguerMenu {
-      display: none;
-    }
-  
-    header .header__navMenu .header__closeNavMenu {
-      display: none;
-    }
-  
-    header .header__navMenu {
-      display: initial;
-      position: inherit;
-    }
-  
-    header .header__navMenu ul {
-        background: radial-gradient(circle at 100%, lightblue, transparent);
-        flex-direction: row;
-        justify-content: space-evenly;
-    } 
-
-    header .header__navMenu ul li:hover {
-        background-color: transparent;
-        transform: scale(0.95);
-    }
-}
-
-/* --------------------- */
-/* aside */
-/* --------------------- */
-
-aside {
-    border-top: 3px solid grey;
-    border-bottom: 3px solid gray;
-    background-color: white;
-
-}
-
-aside ul{
-    padding: 1rem;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    font-size: 0.8rem;
-}
-
-aside ul li:hover {
+.nav-item a:hover {
     transform: scale(0.95);
 }
 
@@ -362,11 +229,11 @@ section div.main__grid3 img{
         font-size: 1.5rem; 
     }
     
-    .main__gridArea img {
+    .main__imgContainer img {
         transition: 0.5s ease-in;
     }
 
-    .main__gridArea img:hover{
+    .main__imgContainer  img:hover{
         transform:scale(1.2)
     }    
 }
@@ -645,10 +512,10 @@ img {
 @media screen and (min-width: 768px){
 
     .sales__main {
-        margin-left: 6rem;
+        margin-left: 7rem;
     }
 
-    .sales__aside ul{
+/*     .sales__aside ul{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -656,32 +523,26 @@ img {
 
     .sales__container-1 {
         font-size: 1.7rem;
-       }
+       } */
 
-    .sales__itemsContainers img { 
+    .sales__itemsContainer img{ 
         transition: 0.5s ease-in;
+        
     }
         
-    .sales__itemsContainers img:hover{
-        transform:scale(0.9)
+    .sales__itemsContainer img:hover{
+        transform:scale(0.9);
+        cursor:pointer
+        
     }
 
-    .sales__itemsContainers h3 {
-        text-align: center;
+    .sales__itemsContainer .price{ 
+        transition: 0.5s ease-in;
     }
 
-    .sales__itemsContainers .price {
-        text-align: center;
-    }
-
-    .sales__itemsContainers h5 {
-        font-size: 1.5rem;
-        text-align: center;
-        transition: all 0.5s ease-in;
-    }
-
-    .sales__itemsContainers h5:hover {
+    .sales__itemsContainer .price:hover {
         transform: scale(1.1) translateY(-5px);
+        cursor:pointer
     }
 
 }
