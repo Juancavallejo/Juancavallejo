@@ -1,0 +1,184 @@
+@import "_footer.scss";
+@import "general.scss";
+
+
+/* Start index */
+/* ------------------- */
+/* Start header */
+/* ---------------------- */
+
+.navbar-brand {
+    img{
+        transition: all 0.2s ease-in;
+        width: 4rem;
+        height: 3rem;
+        &:hover {
+            transform: scale(0.95);
+         }
+    }
+}
+
+.nav-item a{
+    transition: all 0.2s ease-in;
+    &:hover {
+        transform: scale(0.95);
+    }
+}
+
+/* ----------------- */
+/* Media queries main */
+/* ----------------------- */
+
+@media screen and (min-width: 768px) {
+    .main__imgContainer {
+        img {
+            transition: 0.5s ease-in;
+            &:hover {
+                transform:scale(1.2)
+            }
+    
+        }
+    }
+}
+
+/* ------------------- */
+/* End Main */
+/* --------------------> */
+/* End index */
+/* -------------------- */
+/* Start store */
+/* ------------------- */
+
+
+/* --------------------- */
+/* End store------------- */
+/* ----start sales------- */
+/* ------------------- */
+
+@media screen and (min-width: 768px){
+
+    .sales__main {
+        margin-left: 2rem;
+    }
+
+    .sales__itemsContainer {
+        img{ 
+            transition: 0.5s ease-in;
+            &:hover {
+                transform:scale(0.9);
+                cursor:pointer
+            }
+        
+        }
+        .price{ 
+            transition: 0.5s ease-in;
+            &:hover {
+                transform: scale(1.1) translateY(-5px);
+                cursor:pointer
+            }
+        }
+    }
+}
+/* -----------------> */
+/* Start login */
+/* --------------> */
+
+.login__mainContainer {
+    min-width: $MainViwePort;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    .login__form {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .login__mainContainer .login__form {
+        
+        .login__buttons [type=reset] {
+            transition: all 0.5s ease-in;
+            &:hover {
+                transform: scale(1.3) translateX(-10px);
+                cursor:pointer
+            }
+    }
+        .login__buttons [type=submit] {
+            transition: all 0.5s ease-in;
+            &:hover {
+                transform: scale(1.3) translateX(10px);
+                cursor:pointer
+            }
+        }
+    }
+}
+
+/* ------------------> */
+/* Start contact */
+/* ------------------------ */
+
+.contact__mainContainer {
+    min-height: $MainViwePort;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    .contact__form {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .contact__input {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+}
+
+/* ------------------- */
+/* Media queries contact */
+/* ---------------------- */
+
+@media screen and (min-width: 768px){
+    .contact__mainContainer .contact__form {
+        
+        .contact__buttons [type=reset] {
+            transition: all 0.5s ease-in;
+            &:hover {
+                transform: scale(1.3) translateX(-10px);
+                cursor:pointer
+            }
+    }
+        .contact__buttons [type=submit] {
+            transition: all 0.5s ease-in;
+            &:hover {
+                transform: scale(1.3) translateX(10px);
+                cursor:pointer
+            }
+        }
+    }
+}
+
+/* -----------------> */
+/* End contact */
+/* ------------------> */
+/* Start location */
+
+.location__mapContainer iframe {
+    width: 100%;
+}
+
+/* ------------------- */
+/* Media queries location */
+/* ---------------------- */
+
+@media screen and (min-width: 768px){
+
+    .location__mainContainer {
+        width: 70%;
+    }
+}
