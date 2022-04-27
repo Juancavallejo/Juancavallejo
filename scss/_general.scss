@@ -16,3 +16,23 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+/* ----------Mixin ---------- */
+
+@mixin centrarCaja () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transitionDefault () {
+    transition: all 0.5s ease-in
+}
+
+/* ----------maps ------------- */
+
+$estilos:(
+    color: black,
+    fontSize: 1.1rem,
+);
+

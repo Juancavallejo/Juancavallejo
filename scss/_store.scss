@@ -1,0 +1,108 @@
+.store__body {
+    display: grid;
+}
+
+/* inicia Main */
+/* ----------------- */
+
+.store__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .cajaContenido {
+        grid-area: cajaContenido;
+        align-self: center;
+        justify-self: center;
+        color: white;
+        margin-top: 1rem
+    }
+    .cajaPrecio {
+        @extend .cajaContenido;
+        grid-area: cajaPrecio;
+        font-size: 0.6rem;
+    }
+}
+
+.caja1 {
+    grid-area: caja1;
+}
+.caja2 {
+    grid-area: caja2;
+
+}
+.caja3 {
+    grid-area: caja3;
+}
+
+.caja4 {
+    grid-area: caja4;
+}
+
+.caja5 {
+    grid-area: caja5;
+}
+
+.store__tiposTela {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:7% 9% 24% 29% 29%;
+    grid-template-areas: 
+        "cajaContenido cajaContenido" 
+        "cajaPrecio cajaPrecio"   
+        "caja1 caja2" 
+        "caja3 caja3"
+        "caja4 caja5";
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ------------------- */
+/* Media queries Store */
+/* ---------------------- */
+
+@media screen and (min-width: 768px){
+    .store__main {
+        .cajaPrecio {
+            font-size: map-get($estilos, fontSize);
+        }
+    }
+
+    .store__main {
+        margin: 5rem;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "store__tiposTela1 store__tiposTela2"
+            "store__tiposTela3 store__tiposTela4";
+    }
+
+    #store__tiposTela1 {
+        grid-area: store__tiposTela1;
+    }
+    #store__tiposTela2 {
+        grid-area: store__tiposTela2;
+    }
+    #store__tiposTela3 {
+        grid-area: store__tiposTela3;
+    }
+    #store__tiposTela4 {
+        grid-area: store__tiposTela4;
+    }
+    
+    .store__main {
+        img {
+        @include transitionDefault;
+        &:hover{
+            transform:scale(1.2)
+            }
+        }
+    }
+}   
