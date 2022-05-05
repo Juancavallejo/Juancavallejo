@@ -5,6 +5,8 @@
 /* inicia Main */
 /* ----------------- */
 
+
+
 .store__main {
     display: flex;
     flex-direction: column;
@@ -20,6 +22,21 @@
         @extend .cajaContenido;
         grid-area: cajaPrecio;
         font-size: 0.6rem;
+    }
+    #imgNylonEstampadas1 {
+        background-image: url(../assets/imgStore/nylonEstampadas1.png);
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        &:hover {
+            border: solid black 2px;
+        }
+        div {
+            width: 100%;
+            background-color: white;
+            @include centrarCaja;
+        }
     }
 }
 
@@ -59,6 +76,7 @@
 img {
     width: 100%;
     height: 100%;
+    background-size: cover;
 }
 
 
@@ -97,12 +115,12 @@ img {
         grid-area: store__tiposTela4;
     }
     
-    .store__main {
-        img {
+/*     .store__main {
+        article {
         @include transitionDefault;
         &:hover{
-            transform:scale(1.2)
+            transform: scale(0.95);
             }
         }
-    }
+    } */
 }   
