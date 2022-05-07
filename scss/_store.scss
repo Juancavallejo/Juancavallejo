@@ -5,8 +5,6 @@
 /* inicia Main */
 /* ----------------- */
 
-
-
 .store__main {
     display: flex;
     flex-direction: column;
@@ -51,6 +49,8 @@
                 }
             }
         }
+
+        /* Start img section */
         #imgNylonEstampadas2 {
             @extend #imgNylonEstampadas1 ;
             background-image: url(../assets/imgStore/nylonEstampadas2.png);
@@ -127,8 +127,10 @@
             @extend #imgNylonEstampadas1 ;
             background-image: url(../assets/imgStore/supplexEstampadas5.png);
         }
+        /* Finished img section  */
     }
 }
+
 
 @for $i from 1 through 5 {
     .caja#{$i} {
@@ -150,11 +152,6 @@
         "caja4 caja5";
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    background-position: cover;
-}
 
 /* ------------------- */
 /* Media queries Store */

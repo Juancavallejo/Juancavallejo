@@ -17,6 +17,14 @@ body {
     background-attachment: fixed;
 }
 
+/* Image properties */
+
+img {
+    width: 100%;
+    height: 100%;
+    background-position: cover;
+}
+
 /* ----------Mixin ---------- */
 
 @mixin centrarCaja () {
@@ -33,7 +41,7 @@ body {
     transform:scale(1.2)
 }
 
-/* ----------maps ------------- */
+/* ----------Maps ------------- */
 
 $estilos:(
     color: black,
