@@ -27,8 +27,14 @@ body {
   background-size: cover;
   background-attachment: fixed; }
 
+/* Image properties */
+img {
+  width: 100%;
+  height: 100%;
+  background-position: cover; }
+
 /* ----------Mixin ---------- */
-/* ----------maps ------------- */
+/* ----------Maps ------------- */
 .store__body {
   display: grid; }
 
@@ -40,7 +46,9 @@ body {
   align-items: center; }
   .store__main .store__tiposTela {
     max-width: 100vh;
-    height: 100vh; }
+    height: 100vh;
+    /* Start img section */
+    /* Finished img section  */ }
     .store__main .store__tiposTela .cajaContenido, .store__main .store__tiposTela .cajaPrecio {
       grid-area: cajaContenido;
       align-self: center;
@@ -132,11 +140,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 7% 9% 24% 29% 29%;
   grid-template-areas: "cajaContenido cajaContenido"  "cajaPrecio cajaPrecio"    "caja1 caja2"  "caja3 caja3" "caja4 caja5"; }
-
-img {
-  width: 100%;
-  height: 100%;
-  background-position: cover; }
 
 /* ------------------- */
 /* Media queries Store */
