@@ -38,29 +38,77 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .store__main .cajaContenido, .store__main .cajaPrecio {
-    grid-area: cajaContenido;
-    align-self: center;
-    justify-self: center;
-    color: white;
-    margin-top: 1rem; }
-  .store__main .cajaPrecio {
-    grid-area: cajaPrecio;
-    font-size: 0.6rem; }
-  .store__main #imgNylonEstampadas1 {
-    background-image: url(../assets/imgStore/nylonEstampadas1.png);
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center; }
-    .store__main #imgNylonEstampadas1:hover {
-      border: solid black 2px; }
-    .store__main #imgNylonEstampadas1 div {
-      width: 100%;
-      background-color: white;
+  .store__main .store__tiposTela {
+    max-width: 100vh;
+    height: 100vh; }
+    .store__main .store__tiposTela .cajaContenido, .store__main .store__tiposTela .cajaPrecio {
+      grid-area: cajaContenido;
+      align-self: center;
+      justify-self: center;
+      color: white;
+      margin-top: 1rem; }
+    .store__main .store__tiposTela .cajaPrecio {
+      grid-area: cajaPrecio;
+      font-size: 0.6rem; }
+    .store__main .store__tiposTela #imgNylonEstampadas1, .store__main .store__tiposTela #imgNylonEstampadas2, .store__main .store__tiposTela #imgNylonEstampadas3, .store__main .store__tiposTela #imgNylonEstampadas4, .store__main .store__tiposTela #imgNylonEstampadas5, .store__main .store__tiposTela #imgNylonUnicolor1, .store__main .store__tiposTela #imgNylonUnicolor2, .store__main .store__tiposTela #imgNylonUnicolor3, .store__main .store__tiposTela #imgNylonUnicolor4, .store__main .store__tiposTela #imgNylonUnicolor5, .store__main .store__tiposTela #imgSupplexJaspeadas1, .store__main .store__tiposTela #imgSupplexJaspeadas2, .store__main .store__tiposTela #imgSupplexJaspeadas3, .store__main .store__tiposTela #imgSupplexJaspeadas4, .store__main .store__tiposTela #imgSupplexJaspeadas5, .store__main .store__tiposTela #imgSupplexEstampadas1, .store__main .store__tiposTela #imgSupplexEstampadas2, .store__main .store__tiposTela #imgSupplexEstampadas3, .store__main .store__tiposTela #imgSupplexEstampadas4, .store__main .store__tiposTela #imgSupplexEstampadas5 {
+      background-image: url(../assets/imgStore/nylonEstampadas1.png);
+      background-size: cover;
       display: flex;
-      justify-content: center;
-      align-items: center; }
+      align-items: flex-end;
+      justify-content: center; }
+      .store__main .store__tiposTela #imgNylonEstampadas1:hover, .store__main .store__tiposTela #imgNylonEstampadas2:hover, .store__main .store__tiposTela #imgNylonEstampadas3:hover, .store__main .store__tiposTela #imgNylonEstampadas4:hover, .store__main .store__tiposTela #imgNylonEstampadas5:hover, .store__main .store__tiposTela #imgNylonUnicolor1:hover, .store__main .store__tiposTela #imgNylonUnicolor2:hover, .store__main .store__tiposTela #imgNylonUnicolor3:hover, .store__main .store__tiposTela #imgNylonUnicolor4:hover, .store__main .store__tiposTela #imgNylonUnicolor5:hover, .store__main .store__tiposTela #imgSupplexJaspeadas1:hover, .store__main .store__tiposTela #imgSupplexJaspeadas2:hover, .store__main .store__tiposTela #imgSupplexJaspeadas3:hover, .store__main .store__tiposTela #imgSupplexJaspeadas4:hover, .store__main .store__tiposTela #imgSupplexJaspeadas5:hover, .store__main .store__tiposTela #imgSupplexEstampadas1:hover, .store__main .store__tiposTela #imgSupplexEstampadas2:hover, .store__main .store__tiposTela #imgSupplexEstampadas3:hover, .store__main .store__tiposTela #imgSupplexEstampadas4:hover, .store__main .store__tiposTela #imgSupplexEstampadas5:hover {
+        border: solid black 2px; }
+      .store__main .store__tiposTela #imgNylonEstampadas1 div, .store__main .store__tiposTela #imgNylonEstampadas2 div, .store__main .store__tiposTela #imgNylonEstampadas3 div, .store__main .store__tiposTela #imgNylonEstampadas4 div, .store__main .store__tiposTela #imgNylonEstampadas5 div, .store__main .store__tiposTela #imgNylonUnicolor1 div, .store__main .store__tiposTela #imgNylonUnicolor2 div, .store__main .store__tiposTela #imgNylonUnicolor3 div, .store__main .store__tiposTela #imgNylonUnicolor4 div, .store__main .store__tiposTela #imgNylonUnicolor5 div, .store__main .store__tiposTela #imgSupplexJaspeadas1 div, .store__main .store__tiposTela #imgSupplexJaspeadas2 div, .store__main .store__tiposTela #imgSupplexJaspeadas3 div, .store__main .store__tiposTela #imgSupplexJaspeadas4 div, .store__main .store__tiposTela #imgSupplexJaspeadas5 div, .store__main .store__tiposTela #imgSupplexEstampadas1 div, .store__main .store__tiposTela #imgSupplexEstampadas2 div, .store__main .store__tiposTela #imgSupplexEstampadas3 div, .store__main .store__tiposTela #imgSupplexEstampadas4 div, .store__main .store__tiposTela #imgSupplexEstampadas5 div {
+        height: 0.8rem;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .store__main .store__tiposTela #imgNylonEstampadas1 div a, .store__main .store__tiposTela #imgNylonEstampadas2 div a, .store__main .store__tiposTela #imgNylonEstampadas3 div a, .store__main .store__tiposTela #imgNylonEstampadas4 div a, .store__main .store__tiposTela #imgNylonEstampadas5 div a, .store__main .store__tiposTela #imgNylonUnicolor1 div a, .store__main .store__tiposTela #imgNylonUnicolor2 div a, .store__main .store__tiposTela #imgNylonUnicolor3 div a, .store__main .store__tiposTela #imgNylonUnicolor4 div a, .store__main .store__tiposTela #imgNylonUnicolor5 div a, .store__main .store__tiposTela #imgSupplexJaspeadas1 div a, .store__main .store__tiposTela #imgSupplexJaspeadas2 div a, .store__main .store__tiposTela #imgSupplexJaspeadas3 div a, .store__main .store__tiposTela #imgSupplexJaspeadas4 div a, .store__main .store__tiposTela #imgSupplexJaspeadas5 div a, .store__main .store__tiposTela #imgSupplexEstampadas1 div a, .store__main .store__tiposTela #imgSupplexEstampadas2 div a, .store__main .store__tiposTela #imgSupplexEstampadas3 div a, .store__main .store__tiposTela #imgSupplexEstampadas4 div a, .store__main .store__tiposTela #imgSupplexEstampadas5 div a {
+          text-decoration: none;
+          color: black;
+          font-size: 0.5rem; }
+          .store__main .store__tiposTela #imgNylonEstampadas1 div a:hover, .store__main .store__tiposTela #imgNylonEstampadas2 div a:hover, .store__main .store__tiposTela #imgNylonEstampadas3 div a:hover, .store__main .store__tiposTela #imgNylonEstampadas4 div a:hover, .store__main .store__tiposTela #imgNylonEstampadas5 div a:hover, .store__main .store__tiposTela #imgNylonUnicolor1 div a:hover, .store__main .store__tiposTela #imgNylonUnicolor2 div a:hover, .store__main .store__tiposTela #imgNylonUnicolor3 div a:hover, .store__main .store__tiposTela #imgNylonUnicolor4 div a:hover, .store__main .store__tiposTela #imgNylonUnicolor5 div a:hover, .store__main .store__tiposTela #imgSupplexJaspeadas1 div a:hover, .store__main .store__tiposTela #imgSupplexJaspeadas2 div a:hover, .store__main .store__tiposTela #imgSupplexJaspeadas3 div a:hover, .store__main .store__tiposTela #imgSupplexJaspeadas4 div a:hover, .store__main .store__tiposTela #imgSupplexJaspeadas5 div a:hover, .store__main .store__tiposTela #imgSupplexEstampadas1 div a:hover, .store__main .store__tiposTela #imgSupplexEstampadas2 div a:hover, .store__main .store__tiposTela #imgSupplexEstampadas3 div a:hover, .store__main .store__tiposTela #imgSupplexEstampadas4 div a:hover, .store__main .store__tiposTela #imgSupplexEstampadas5 div a:hover {
+            transform: scale(1.2); }
+    .store__main .store__tiposTela #imgNylonEstampadas2 {
+      background-image: url(../assets/imgStore/nylonEstampadas2.png); }
+    .store__main .store__tiposTela #imgNylonEstampadas3 {
+      background-image: url(../assets/imgStore/nylonEstampadas3.png); }
+    .store__main .store__tiposTela #imgNylonEstampadas4 {
+      background-image: url(../assets/imgStore/nylonEstampadas4.png); }
+    .store__main .store__tiposTela #imgNylonEstampadas5 {
+      background-image: url(../assets/imgStore/nylonEstampadas5.png); }
+    .store__main .store__tiposTela #imgNylonUnicolor1 {
+      background-image: url(../assets/imgStore/nylonUnicolor1.png); }
+    .store__main .store__tiposTela #imgNylonUnicolor2 {
+      background-image: url(../assets/imgStore/nylonUnicolor2.png); }
+    .store__main .store__tiposTela #imgNylonUnicolor3 {
+      background-image: url(../assets/imgStore/nylonUnicolor3.png); }
+    .store__main .store__tiposTela #imgNylonUnicolor4 {
+      background-image: url(../assets/imgStore/nylonUnicolor4.png); }
+    .store__main .store__tiposTela #imgNylonUnicolor5 {
+      background-image: url(../assets/imgStore/nylonUnicolor5.png); }
+    .store__main .store__tiposTela #imgSupplexJaspeadas1 {
+      background-image: url(../assets/imgStore/supplexJaspeadas1.png); }
+    .store__main .store__tiposTela #imgSupplexJaspeadas2 {
+      background-image: url(../assets/imgStore/supplexJaspeadas2.png); }
+    .store__main .store__tiposTela #imgSupplexJaspeadas3 {
+      background-image: url(../assets/imgStore/supplexJaspeadas3.png); }
+    .store__main .store__tiposTela #imgSupplexJaspeadas4 {
+      background-image: url(../assets/imgStore/supplexJaspeadas4.png); }
+    .store__main .store__tiposTela #imgSupplexJaspeadas5 {
+      background-image: url(../assets/imgStore/supplexJaspeadas5.png); }
+    .store__main .store__tiposTela #imgSupplexEstampadas1 {
+      background-image: url(../assets/imgStore/supplexEstampadas1.png); }
+    .store__main .store__tiposTela #imgSupplexEstampadas2 {
+      background-image: url(../assets/imgStore/supplexEstampadas2.png); }
+    .store__main .store__tiposTela #imgSupplexEstampadas3 {
+      background-image: url(../assets/imgStore/supplexEstampadas3.png); }
+    .store__main .store__tiposTela #imgSupplexEstampadas4 {
+      background-image: url(../assets/imgStore/supplexEstampadas4.png); }
+    .store__main .store__tiposTela #imgSupplexEstampadas5 {
+      background-image: url(../assets/imgStore/supplexEstampadas5.png); }
 
 .caja1 {
   grid-area: caja1; }
@@ -88,14 +136,12 @@ body {
 img {
   width: 100%;
   height: 100%;
-  background-size: cover; }
+  background-position: cover; }
 
 /* ------------------- */
 /* Media queries Store */
 /* ---------------------- */
 @media screen and (min-width: 768px) {
-  .store__main .cajaPrecio {
-    font-size: 1.1rem; }
   .store__main {
     margin: 5rem;
     grid-area: main;
@@ -103,6 +149,14 @@ img {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "store__tiposTela1 store__tiposTela2" "store__tiposTela3 store__tiposTela4"; }
+    .store__main .store__tiposTela {
+      height: 140vh; }
+      .store__main .store__tiposTela .cajaPrecio {
+        font-size: 1rem; }
+      .store__main .store__tiposTela #imgNylonEstampadas1 div, .store__main .store__tiposTela #imgNylonEstampadas2 div, .store__main .store__tiposTela #imgNylonEstampadas3 div, .store__main .store__tiposTela #imgNylonEstampadas4 div, .store__main .store__tiposTela #imgNylonEstampadas5 div, .store__main .store__tiposTela #imgNylonUnicolor1 div, .store__main .store__tiposTela #imgNylonUnicolor2 div, .store__main .store__tiposTela #imgNylonUnicolor3 div, .store__main .store__tiposTela #imgNylonUnicolor4 div, .store__main .store__tiposTela #imgNylonUnicolor5 div, .store__main .store__tiposTela #imgSupplexJaspeadas1 div, .store__main .store__tiposTela #imgSupplexJaspeadas2 div, .store__main .store__tiposTela #imgSupplexJaspeadas3 div, .store__main .store__tiposTela #imgSupplexJaspeadas4 div, .store__main .store__tiposTela #imgSupplexJaspeadas5 div, .store__main .store__tiposTela #imgSupplexEstampadas1 div, .store__main .store__tiposTela #imgSupplexEstampadas2 div, .store__main .store__tiposTela #imgSupplexEstampadas3 div, .store__main .store__tiposTela #imgSupplexEstampadas4 div, .store__main .store__tiposTela #imgSupplexEstampadas5 div {
+        height: 1.4rem; }
+        .store__main .store__tiposTela #imgNylonEstampadas1 div a, .store__main .store__tiposTela #imgNylonEstampadas2 div a, .store__main .store__tiposTela #imgNylonEstampadas3 div a, .store__main .store__tiposTela #imgNylonEstampadas4 div a, .store__main .store__tiposTela #imgNylonEstampadas5 div a, .store__main .store__tiposTela #imgNylonUnicolor1 div a, .store__main .store__tiposTela #imgNylonUnicolor2 div a, .store__main .store__tiposTela #imgNylonUnicolor3 div a, .store__main .store__tiposTela #imgNylonUnicolor4 div a, .store__main .store__tiposTela #imgNylonUnicolor5 div a, .store__main .store__tiposTela #imgSupplexJaspeadas1 div a, .store__main .store__tiposTela #imgSupplexJaspeadas2 div a, .store__main .store__tiposTela #imgSupplexJaspeadas3 div a, .store__main .store__tiposTela #imgSupplexJaspeadas4 div a, .store__main .store__tiposTela #imgSupplexJaspeadas5 div a, .store__main .store__tiposTela #imgSupplexEstampadas1 div a, .store__main .store__tiposTela #imgSupplexEstampadas2 div a, .store__main .store__tiposTela #imgSupplexEstampadas3 div a, .store__main .store__tiposTela #imgSupplexEstampadas4 div a, .store__main .store__tiposTela #imgSupplexEstampadas5 div a {
+          font-size: 0.7rem; }
   #store__tiposTela1 {
     grid-area: store__tiposTela1; }
   #store__tiposTela2 {
@@ -110,15 +164,7 @@ img {
   #store__tiposTela3 {
     grid-area: store__tiposTela3; }
   #store__tiposTela4 {
-    grid-area: store__tiposTela4; }
-  /*     .store__main {
-        article {
-        @include transitionDefault;
-        &:hover{
-            transform: scale(0.95);
-            }
-        }
-    } */ }
+    grid-area: store__tiposTela4; } }
 
 /* Start index */
 /* ------------------- */
@@ -171,7 +217,7 @@ img {
 
 .sales__itemsContainer .card-text {
   color: black;
-  font-size: 1.1rem; }
+  font-size: 1rem; }
 
 @media screen and (min-width: 768px) {
   .sales__main {

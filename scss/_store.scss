@@ -11,52 +11,129 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .cajaContenido {
-        grid-area: cajaContenido;
-        align-self: center;
-        justify-self: center;
-        color: white;
-        margin-top: 1rem
-    }
-    .cajaPrecio {
-        @extend .cajaContenido;
-        grid-area: cajaPrecio;
-        font-size: 0.6rem;
-    }
-    #imgNylonEstampadas1 {
-        background-image: url(../assets/imgStore/nylonEstampadas1.png);
-        background-size: cover;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        &:hover {
-            border: solid black 2px;
+    .store__tiposTela {
+        max-width: 100vh;
+        height: 100vh;
+        .cajaContenido {
+            grid-area: cajaContenido;
+            align-self: center;
+            justify-self: center;
+            color: white;
+            margin-top: 1rem
         }
-        div {
-            width: 100%;
-            background-color: white;
-            @include centrarCaja;
+        .cajaPrecio {
+         @extend .cajaContenido;
+            grid-area: cajaPrecio;
+            font-size: 0.6rem;
+        }
+        #imgNylonEstampadas1 {
+            background-image: url(../assets/imgStore/nylonEstampadas1.png);
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            &:hover {
+                border: solid black 2px;
+            }
+            div {
+                height: 0.8rem;
+                width: 100%;
+                background-color: white;
+                @include centrarCaja;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 0.5rem;
+                    &:hover {
+                        @include transformDefaul;
+                        
+                    }
+                }
+            }
+        }
+        #imgNylonEstampadas2 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/nylonEstampadas2.png);
+        }
+        #imgNylonEstampadas3 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/nylonEstampadas3.png);
+        }
+        #imgNylonEstampadas4 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/nylonEstampadas4.png);
+        }
+        #imgNylonEstampadas5 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/nylonEstampadas5.png);
+        }
+        #imgNylonUnicolor1 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/nylonUnicolor1.png);
+        }
+        #imgNylonUnicolor2 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/nylonUnicolor2.png);
+        }
+        #imgNylonUnicolor3 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/nylonUnicolor3.png);
+        }
+        #imgNylonUnicolor4 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/nylonUnicolor4.png);
+        }
+        #imgNylonUnicolor5 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/nylonUnicolor5.png);
+        }
+        #imgSupplexJaspeadas1 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/supplexJaspeadas1.png);
+        }
+        #imgSupplexJaspeadas2 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/supplexJaspeadas2.png);
+        }
+        #imgSupplexJaspeadas3 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/supplexJaspeadas3.png);
+        }
+        #imgSupplexJaspeadas4 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/supplexJaspeadas4.png);
+        }
+        #imgSupplexJaspeadas5 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/supplexJaspeadas5.png);
+        }
+        #imgSupplexEstampadas1 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/supplexEstampadas1.png);
+        }
+        #imgSupplexEstampadas2 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/supplexEstampadas2.png);
+        }
+        #imgSupplexEstampadas3 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/supplexEstampadas3.png);
+        }
+        #imgSupplexEstampadas4 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/supplexEstampadas4.png);
+        }
+        #imgSupplexEstampadas5 {
+            @extend #imgNylonEstampadas1 ;
+            background-image: url(../assets/imgStore/supplexEstampadas5.png);
         }
     }
 }
 
-.caja1 {
-    grid-area: caja1;
-}
-.caja2 {
-    grid-area: caja2;
-
-}
-.caja3 {
-    grid-area: caja3;
-}
-
-.caja4 {
-    grid-area: caja4;
-}
-
-.caja5 {
-    grid-area: caja5;
+@for $i from 1 through 5 {
+    .caja#{$i} {
+        grid-area: caja +$i;
+    }
 }
 
 .store__tiposTela {
@@ -76,21 +153,14 @@
 img {
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-position: cover;
 }
-
 
 /* ------------------- */
 /* Media queries Store */
 /* ---------------------- */
 
 @media screen and (min-width: 768px){
-    .store__main {
-        .cajaPrecio {
-            font-size: map-get($estilos, fontSize);
-        }
-    }
-
     .store__main {
         margin: 5rem;
         grid-area: main;
@@ -100,8 +170,22 @@ img {
         grid-template-areas: 
             "store__tiposTela1 store__tiposTela2"
             "store__tiposTela3 store__tiposTela4";
+        .store__tiposTela {
+            height: 140vh;
+            .cajaPrecio {
+            font-size: map-get($estilos, fontSize);
+            }
+            #imgNylonEstampadas1 {
+                div {
+                    height: 1.4rem;
+                    a {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+        
     }
-
     #store__tiposTela1 {
         grid-area: store__tiposTela1;
     }
@@ -114,13 +198,4 @@ img {
     #store__tiposTela4 {
         grid-area: store__tiposTela4;
     }
-    
-/*     .store__main {
-        article {
-        @include transitionDefault;
-        &:hover{
-            transform: scale(0.95);
-            }
-        }
-    } */
-}   
+}

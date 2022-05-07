@@ -29,10 +29,14 @@ body {
     transition: all 0.5s ease-in
 }
 
+@mixin transformDefaul {
+    transform:scale(1.2)
+}
+
 /* ----------maps ------------- */
 
 $estilos:(
     color: black,
-    fontSize: 1.1rem,
+    fontSize: 1rem,
 );
 
