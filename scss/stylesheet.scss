@@ -18,7 +18,6 @@
          }
     }
 }
-
 .nav-item a{
     @include transitionDefault;
     &:hover {
@@ -26,26 +25,26 @@
     }
 }
 
+/* Start main----------- */
+/* ------------------- */
+
 #carouselExampleFade {
     img {
         max-height: 50vh;
     }
 }
-
 .main__descriptionContainer {
     border: 1px solid white;
     .main__descriptionTela {
         border: 1px solid white;
     }
 }
-
 .main__imgContainer {
     border: 1px solid white;
     img {
         border: 1px solid white;
     }
 }
-
 
 /* ----------------- */
 /* Media queries main */
@@ -74,40 +73,40 @@
 .sales__main {
     .container-fluid {
     margin-left: 0.2rem;
+        .sales__itemsContainer {
+            .card-text{
+                color: map-get($estilos, color);
+                font-size: map-get($estilos, fontSize);
+            }
+        } 
+
     }
 }
-
-.sales__itemsContainer {
-    .card-text{
-        color: map-get($estilos, color);
-        font-size: map-get($estilos, fontSize);
-    }
-} 
 
 @media screen and (min-width: 768px){
 
     .sales__main {
         margin-left: 2rem;
-    }
-
-    .sales__itemsContainer {
-        img{ 
-            @include transitionDefault;
-            &:hover {
-                transform:scale(0.9);
-                cursor:pointer
-            }
+        .sales__itemsContainer {
+            img{ 
+                @include transitionDefault;
+                &:hover {
+                    transform:scale(0.9);
+                    cursor:pointer
+                }
         
-        }
-        .price{ 
-            @include transitionDefault;
-            &:hover {
-                transform: scale(1.1) translateY(-5px);
-                cursor:pointer
+            }
+            .price{ 
+                @include transitionDefault;
+                &:hover {
+                    transform: scale(1.1) translateY(-5px);
+                    cursor:pointer
+                }
             }
         }
     }
 }
+
 /* -----------------> */
 /* Start login */
 /* --------------> */
@@ -115,7 +114,6 @@
 .login__mainContainer {
     min-height: $mainViewPort;
     @include centrarCaja;
-
     .login__form {
         display: grid;
         justify-content: center;
@@ -125,7 +123,6 @@
 
 @media screen and (min-width: 768px){
     .login__mainContainer .login__form {
-        
         .login__buttons [type=reset] {
             @include transitionDefault;
             &:hover {
@@ -157,16 +154,14 @@
 .contact__mainContainer {
     min-height: $mainViewPort;
     @include centrarCaja;
-
     .contact__form {
         display: grid;
         justify-content: center;
         align-items: center;
     }
-
-        .contact__input {
-            @include centrarCaja;
-        }
+    .contact__input {
+        @include centrarCaja;
+    }
 }
 
 /* ------------------- */
@@ -175,7 +170,6 @@
 
 @media screen and (min-width: 768px){
     .contact__mainContainer .contact__form {
-        
         .contact__buttons [type=reset] {
             @include transitionDefault;
             &:hover {
@@ -210,5 +204,26 @@
 
     .location__mainContainer {
         width: 70%;
+    }
+}
+
+/* ---------------------------*/
+/* ----------Start About------------ */
+/* ----------------------- */
+
+.about__mainContainer {
+    .about__info {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .about__mainContainer {
+        .about__info {
+        font-size: 1.3rem;
+        }
+        .about__img {
+            max-height: 40vh;
+        }
     }
 }

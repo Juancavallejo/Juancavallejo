@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
         content="TELAS, CONTACTO, ESCRIBENOS, PRODUCTO, NOMBRE, EMAIL, METROS, CIUDAD, COLOMBIA, ENTREGAS">
-    <title>Formulario de contacto- Rafza</title>
+    <title>Horas de apertura- Rafza</title>
     <meta name="description"
         content="Si tienes alguna solicitud especial o requieres hacer una cotización más detallada puedes usar este formulario y enviariemos una cotización lo más pronto posible">
     <link rel="shortcut icon" href="../assets/img/logoRafza.png">
@@ -70,43 +70,35 @@
     <!-- ------------------- -->
     <!-- start main -->
     <!-- ----------------------- -->
-    <main class="contact__mainContainer">
-        <form class="contact__form border border-light border-3 p-2" action="/ruta-destino" method="get" enctype="">
-            <h1 class="text-center text-light animate__animated animate__backInDown m-4">Escribenos!</h1>
-            <p class="container text-center text-light">Deja tus datos, detallando tu producto, cantidad necesitada y
-                te enviaremos una cotización tan pronto como nos sea posible.</p>
-            <div class="container">
-                <div class="row m-2">
-                    <input class="col-12 col-md-3" type="text" name="username and lastname" id="nombre"
-                        placeholder="Ingresa tu nombre" required>
-                    <input class="col-12 col-md-3" type="email" name="email" placeholder="Ingresa tu email" required>
-                    <input class="col-12 col-md-3" type="number" name="Cantidad" id="Cantidad" value="Cantidad"
-                        placeholder="Numero de metros" class="contact__numeroMetros">
-                    <select class="col-12 col-md-3" name="Ciudades" id="Ciudades">
-                        <option value="" hidden selected>Elije una ciudad</option>
-                        <option value="Med">Medellín</option>
-                        <option value="Bog">Bogotá</option>
-                        <option value="Cal">Cali</option>
-                        <option value="Car">Cartagena</option>
-                        <option value="Per">Pereira</option>
-                        <option value="Man">Manizales</option>
-                    </select>
-                </div>
-            </div>
-            <div>
-                <h4 class="container text-light">Recuerda que solo hacemos entregas dentro de Colombia.</h4>
-                <div class="mb-3 text-light text-center">
-                    <label for="exampleFormControlTextarea1" class="form-label w-75">Ingresa cualquiera otra necesidad
-                        especial</label>
-                    <textarea class="form-control w-75 mx-auto" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="contact__buttons d-flex justify-content-center m-2">
-                    <button class="btn btn-dark mx-2 mx-md-3" type="reset">Limpiar</button>
-                    <button class="btn btn-dark mx-2 mx-md-3" type="submit">Enviar</button>
-                </div>
-            </div>
+    <main class="container-fluid login__mainContainer">
+        <form class="opening__form border border-light border-3 p-2" action="/ruta-destino" method="get" enctype="">
+          <h1 class="text-light animate__animated animate__backInDown ">En nuestra sede principal de comercializadora rafza, manejamos los siguientes:</h1>
+          <h2 class="text-center text-light animate__animated animate__backInDown m-4">Horarios de atención</h2>
+            <table class="table table-sm table-bordered">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Dia</th>
+                    <th scope="col">Horario de apertura</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Lunes a viernes</th>
+                    <td class="text-light">9:00 am a 6:00 pm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sábado</th>
+                    <td class="text-light">8:00 am a 2:00pm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Domingos y festivos</th>
+                    <td class="text-light">No tenemos funcionamiento</td>
+                  </tr>
+                  <tr>
+                </tbody>
+            </table>
         </form>
-    </main>
+      </main>
     <!-- ------------------ -->
     <!-- Start footer -->
     <footer class="footer m-2"></footer>

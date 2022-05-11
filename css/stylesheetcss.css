@@ -185,6 +185,8 @@ img {
   .nav-item a:hover {
     transform: scale(0.95); }
 
+/* Start main----------- */
+/* ------------------- */
 #carouselExampleFade img {
   max-height: 50vh; }
 
@@ -217,24 +219,23 @@ img {
 /* ------------------- */
 .sales__main .container-fluid {
   margin-left: 0.2rem; }
-
-.sales__itemsContainer .card-text {
-  color: black;
-  font-size: 1rem; }
+  .sales__main .container-fluid .sales__itemsContainer .card-text {
+    color: black;
+    font-size: 1rem; }
 
 @media screen and (min-width: 768px) {
   .sales__main {
     margin-left: 2rem; }
-  .sales__itemsContainer img {
-    transition: all 0.5s ease-in; }
-    .sales__itemsContainer img:hover {
-      transform: scale(0.9);
-      cursor: pointer; }
-  .sales__itemsContainer .price {
-    transition: all 0.5s ease-in; }
-    .sales__itemsContainer .price:hover {
-      transform: scale(1.1) translateY(-5px);
-      cursor: pointer; } }
+    .sales__main .sales__itemsContainer img {
+      transition: all 0.5s ease-in; }
+      .sales__main .sales__itemsContainer img:hover {
+        transform: scale(0.9);
+        cursor: pointer; }
+    .sales__main .sales__itemsContainer .price {
+      transition: all 0.5s ease-in; }
+      .sales__main .sales__itemsContainer .price:hover {
+        transform: scale(1.1) translateY(-5px);
+        cursor: pointer; } }
 
 /* -----------------> */
 /* Start login */
@@ -311,3 +312,15 @@ img {
 @media screen and (min-width: 768px) {
   .location__mainContainer {
     width: 70%; } }
+
+/* ---------------------------*/
+/* ----------Start About------------ */
+/* ----------------------- */
+.about__mainContainer .about__info {
+  font-size: 0.8rem; }
+
+@media screen and (min-width: 768px) {
+  .about__mainContainer .about__info {
+    font-size: 1.3rem; }
+  .about__mainContainer .about__img {
+    max-height: 40vh; } }

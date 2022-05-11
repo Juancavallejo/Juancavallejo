@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
         content="TELAS, CONTACTO, ESCRIBENOS, PRODUCTO, NOMBRE, EMAIL, METROS, CIUDAD, COLOMBIA, ENTREGAS">
-    <title>Formulario de contacto- Rafza</title>
+    <title>Sobre nosotros- Rafza</title>
     <meta name="description"
         content="Si tienes alguna solicitud especial o requieres hacer una cotización más detallada puedes usar este formulario y enviariemos una cotización lo más pronto posible">
     <link rel="shortcut icon" href="../assets/img/logoRafza.png">
@@ -69,43 +70,59 @@
     </nav>
     <!-- ------------------- -->
     <!-- start main -->
-    <!-- ----------------------- -->
-    <main class="contact__mainContainer">
-        <form class="contact__form border border-light border-3 p-2" action="/ruta-destino" method="get" enctype="">
-            <h1 class="text-center text-light animate__animated animate__backInDown m-4">Escribenos!</h1>
-            <p class="container text-center text-light">Deja tus datos, detallando tu producto, cantidad necesitada y
-                te enviaremos una cotización tan pronto como nos sea posible.</p>
-            <div class="container">
-                <div class="row m-2">
-                    <input class="col-12 col-md-3" type="text" name="username and lastname" id="nombre"
-                        placeholder="Ingresa tu nombre" required>
-                    <input class="col-12 col-md-3" type="email" name="email" placeholder="Ingresa tu email" required>
-                    <input class="col-12 col-md-3" type="number" name="Cantidad" id="Cantidad" value="Cantidad"
-                        placeholder="Numero de metros" class="contact__numeroMetros">
-                    <select class="col-12 col-md-3" name="Ciudades" id="Ciudades">
-                        <option value="" hidden selected>Elije una ciudad</option>
-                        <option value="Med">Medellín</option>
-                        <option value="Bog">Bogotá</option>
-                        <option value="Cal">Cali</option>
-                        <option value="Car">Cartagena</option>
-                        <option value="Per">Pereira</option>
-                        <option value="Man">Manizales</option>
-                    </select>
+    <!-- ------------------------->
+    <main>
+        <div class=" about__mainContainer container">
+            <!-- Valores empresariales, mision y visión -->
+            <h1 class="text-light mt-4 animate__animated animate__backInDown ">En comercializadora Rafza, nos guiamos por lo siguiente: </h1>
+            <div class="row my-4">
+                <div class="col-12 col-md-6 my-2">
+                    <h2 class="text-light m-2">Misión</h2>
+                    <P class="about__info text-light m-2">Dentro de comercializadora Rafza, buscamos innovar, liderar,
+                        mejorar y proporcionar productos y servicios del mejor valor,
+                        buscando marcar la diferencia a atraves de nuestra marca de la mano de los cambios del mercado y
+                        la ultima tecnología en telas. </P>
+                </div>
+                <div class="col-12 col-md-6 my-4 about__img">
+                    <img src="../assets/img/imagenAbout1.jpg" alt="Rollos telas organizados Supplex ">
+                </div>
+                <div class="col-12 col-md-6 my-2">
+                    <h2 class="text-light m-2">Visión</h2>
+                    <P class="about__info text-light m-2">Posicionarnos en el mercado como una empresa de gran
+                        recorrido, con gran reconocimiento a nivel nacional e internacional gracias a nuestros
+                        productos,
+                        calidad, precios, servicios e innovación, de la mano del trabaj conjunto con nustros asociados
+                        comerciales, empleados y con el constante apoyo de clientes y demas interesados.</P>
+                </div>
+                <div class="col-12 col-md-6 my-2 about__img">
+                    <img src="../assets/img/imagenAbout2.jpg" alt="Producción telas multicolor Supplex">
+                </div>
+                <div class="col-12 col-md-6 my-2">
+                    <h2 class="text-light m-2">Valores</h2>
+                    <P class="about__info text-light m-2">Buscamos destacarnos por nuestra pintualidad y transparencia
+                        asi como nuestra responsabilidad social y ambiental de la mano del respeto de derechos y deberes
+                        de los diferentes actores comerciales
+                        buscando brindar un excelente servicio y un permanente excelente acuerdo laboral buscando en
+                        definitiva el crecimiento conjunto.
+                    </P>
+                </div>
+                <div class="col-12 col-md-6 my-2 about__img">
+                    <img src="../assets/img/imagenAbout3.jpg" alt="Estanteria telas Nylon Unicolor">
+                </div>
+                <div class="col-12 col-md-6 my-2">
+                    <h2 class="text-light m-2">Garantia</h2>
+                    <P class="about__info text-light m-2">Dentro de comercializadora garantizamos el derecho a recibir
+                        información precisa, precios claros y productos de calidad, por ello ante cualquier
+                        irregularidad en los productos
+                        procederemos a su revisión y eventual cambio, siempre que se cumplan las condiciones de
+                        almacenamiento, cuidado, manufacturación y uso. Finalmente te mencionamos que todos nuestros
+                        productos contaran con una garantia de 3 meses desde su compra. </P>
+                </div>
+                <div class="col-12 col-md-6 about__img">
+                    <img src="../assets/img/imagenAbout4.jpeg" alt="Rollos telas organizados coloridos Supplex">
                 </div>
             </div>
-            <div>
-                <h4 class="container text-light">Recuerda que solo hacemos entregas dentro de Colombia.</h4>
-                <div class="mb-3 text-light text-center">
-                    <label for="exampleFormControlTextarea1" class="form-label w-75">Ingresa cualquiera otra necesidad
-                        especial</label>
-                    <textarea class="form-control w-75 mx-auto" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="contact__buttons d-flex justify-content-center m-2">
-                    <button class="btn btn-dark mx-2 mx-md-3" type="reset">Limpiar</button>
-                    <button class="btn btn-dark mx-2 mx-md-3" type="submit">Enviar</button>
-                </div>
-            </div>
-        </form>
+        </div>
     </main>
     <!-- ------------------ -->
     <!-- Start footer -->
