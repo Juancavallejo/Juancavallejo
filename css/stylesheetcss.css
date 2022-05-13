@@ -169,6 +169,101 @@ img {
   #store__tiposTela4 {
     grid-area: store__tiposTela4; } }
 
+.sales__main .container-fluid {
+  margin-left: 0.2rem; }
+  .sales__main .container-fluid .sales__itemsContainer .card-text {
+    color: black;
+    font-size: 1rem; }
+
+@media screen and (min-width: 768px) {
+  .sales__main {
+    margin-left: 2rem; }
+    .sales__main .sales__itemsContainer img {
+      transition: all 0.5s ease-in; }
+      .sales__main .sales__itemsContainer img:hover {
+        transform: scale(0.9);
+        cursor: pointer; }
+    .sales__main .sales__itemsContainer .price {
+      transition: all 0.5s ease-in; }
+      .sales__main .sales__itemsContainer .price:hover {
+        transform: scale(1.1) translateY(-5px);
+        cursor: pointer; } }
+
+.login__mainContainer {
+  min-height: 78vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .login__mainContainer .login__form {
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+
+@media screen and (min-width: 768px) {
+  .login__mainContainer .login__form .login__buttons [type=reset] {
+    transition: all 0.5s ease-in; }
+    .login__mainContainer .login__form .login__buttons [type=reset]:hover {
+      transform: scale(1.3) translateX(-10px);
+      cursor: pointer; }
+  .login__mainContainer .login__form .login__buttons [type=submit] {
+    transition: all 0.5s ease-in; }
+    .login__mainContainer .login__form .login__buttons [type=submit]:hover {
+      transform: scale(1.3);
+      cursor: pointer; }
+  .login__mainContainer .login__form .login__buttons [type=register] {
+    transition: all 0.5s ease-in; }
+    .login__mainContainer .login__form .login__buttons [type=register]:hover {
+      transform: scale(1.3) translateX(10px);
+      cursor: pointer; } }
+
+.contact__mainContainer {
+  min-height: 78vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact__mainContainer .contact__form {
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+  .contact__mainContainer .contact__input {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+/* ------------------- */
+/* Media queries contact */
+/* ---------------------- */
+@media screen and (min-width: 768px) {
+  .contact__mainContainer .contact__form .contact__buttons [type=reset] {
+    transition: all 0.5s ease-in; }
+    .contact__mainContainer .contact__form .contact__buttons [type=reset]:hover {
+      transform: scale(1.3) translateX(-10px);
+      cursor: pointer; }
+  .contact__mainContainer .contact__form .contact__buttons [type=submit] {
+    transition: all 0.5s ease-in; }
+    .contact__mainContainer .contact__form .contact__buttons [type=submit]:hover {
+      transform: scale(1.3) translateX(10px);
+      cursor: pointer; } }
+
+.location__mapContainer iframe {
+  width: 100%; }
+
+/* ------------------- */
+/* Media queries location */
+/* ---------------------- */
+@media screen and (min-width: 768px) {
+  .location__mainContainer {
+    width: 70%; } }
+
+.about__mainContainer .about__info {
+  font-size: 0.8rem; }
+
+@media screen and (min-width: 768px) {
+  .about__mainContainer .about__info {
+    font-size: 1.3rem; }
+  .about__mainContainer .about__img {
+    max-height: 40vh; } }
+
 /* Start index */
 /* ------------------- */
 /* Start header */
@@ -215,112 +310,3 @@ img {
 /* --------------------> */
 /* End index */
 /* -------------------- */
-/* ----start sales------- */
-/* ------------------- */
-.sales__main .container-fluid {
-  margin-left: 0.2rem; }
-  .sales__main .container-fluid .sales__itemsContainer .card-text {
-    color: black;
-    font-size: 1rem; }
-
-@media screen and (min-width: 768px) {
-  .sales__main {
-    margin-left: 2rem; }
-    .sales__main .sales__itemsContainer img {
-      transition: all 0.5s ease-in; }
-      .sales__main .sales__itemsContainer img:hover {
-        transform: scale(0.9);
-        cursor: pointer; }
-    .sales__main .sales__itemsContainer .price {
-      transition: all 0.5s ease-in; }
-      .sales__main .sales__itemsContainer .price:hover {
-        transform: scale(1.1) translateY(-5px);
-        cursor: pointer; } }
-
-/* -----------------> */
-/* Start login */
-/* --------------> */
-.login__mainContainer {
-  min-height: 78vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .login__mainContainer .login__form {
-    display: grid;
-    justify-content: center;
-    align-items: center; }
-
-@media screen and (min-width: 768px) {
-  .login__mainContainer .login__form .login__buttons [type=reset] {
-    transition: all 0.5s ease-in; }
-    .login__mainContainer .login__form .login__buttons [type=reset]:hover {
-      transform: scale(1.3) translateX(-10px);
-      cursor: pointer; }
-  .login__mainContainer .login__form .login__buttons [type=submit] {
-    transition: all 0.5s ease-in; }
-    .login__mainContainer .login__form .login__buttons [type=submit]:hover {
-      transform: scale(1.3);
-      cursor: pointer; }
-  .login__mainContainer .login__form .login__buttons [type=register] {
-    transition: all 0.5s ease-in; }
-    .login__mainContainer .login__form .login__buttons [type=register]:hover {
-      transform: scale(1.3) translateX(10px);
-      cursor: pointer; } }
-
-/* ------------------> */
-/* Start contact */
-/* ------------------------ */
-.contact__mainContainer {
-  min-height: 78vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .contact__mainContainer .contact__form {
-    display: grid;
-    justify-content: center;
-    align-items: center; }
-  .contact__mainContainer .contact__input {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-
-/* ------------------- */
-/* Media queries contact */
-/* ---------------------- */
-@media screen and (min-width: 768px) {
-  .contact__mainContainer .contact__form .contact__buttons [type=reset] {
-    transition: all 0.5s ease-in; }
-    .contact__mainContainer .contact__form .contact__buttons [type=reset]:hover {
-      transform: scale(1.3) translateX(-10px);
-      cursor: pointer; }
-  .contact__mainContainer .contact__form .contact__buttons [type=submit] {
-    transition: all 0.5s ease-in; }
-    .contact__mainContainer .contact__form .contact__buttons [type=submit]:hover {
-      transform: scale(1.3) translateX(10px);
-      cursor: pointer; } }
-
-/* -----------------> */
-/* End contact */
-/* ------------------> */
-/* Start location */
-.location__mapContainer iframe {
-  width: 100%; }
-
-/* ------------------- */
-/* Media queries location */
-/* ---------------------- */
-@media screen and (min-width: 768px) {
-  .location__mainContainer {
-    width: 70%; } }
-
-/* ---------------------------*/
-/* ----------Start About------------ */
-/* ----------------------- */
-.about__mainContainer .about__info {
-  font-size: 0.8rem; }
-
-@media screen and (min-width: 768px) {
-  .about__mainContainer .about__info {
-    font-size: 1.3rem; }
-  .about__mainContainer .about__img {
-    max-height: 40vh; } }

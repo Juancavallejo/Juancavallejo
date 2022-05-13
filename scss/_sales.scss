@@ -1,0 +1,36 @@
+.sales__main {
+    .container-fluid {
+    margin-left: 0.2rem;
+        .sales__itemsContainer {
+            .card-text{
+                color: map-get($estilos, color);
+                font-size: map-get($estilos, fontSize);
+            }
+        } 
+
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .sales__main {
+        margin-left: 2rem;
+        .sales__itemsContainer {
+            img{ 
+                @include transitionDefault;
+                &:hover {
+                    transform:scale(0.9);
+                    cursor:pointer
+                }
+        
+            }
+            .price{ 
+                @include transitionDefault;
+                &:hover {
+                    transform: scale(1.1) translateY(-5px);
+                    cursor:pointer
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.contact__mainContainer {
+    min-height: $mainViewPort;
+    @include centrarCaja;
+    .contact__form {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact__input {
+        @include centrarCaja;
+    }
+}
+
+/* ------------------- */
+/* Media queries contact */
+/* ---------------------- */
+
+@media screen and (min-width: 768px){
+    .contact__mainContainer .contact__form {
+        .contact__buttons [type=reset] {
+            @include transitionDefault;
+            &:hover {
+                transform: scale(1.3) translateX(-10px);
+                cursor:pointer
+            }
+    }
+        .contact__buttons [type=submit] {
+            @include transitionDefault;
+            &:hover {
+                transform: scale(1.3) translateX(10px);
+                cursor:pointer
+            }
+        }
+    }
+}
